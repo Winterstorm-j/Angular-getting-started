@@ -1,0 +1,15 @@
+<div style="background-image: linear-gradient(rgba(254, 212, 212, 0.998) 10%,rgba(253, 88, 88, 0.679) 39%, rgba(51,56,57,1) 96%); text-align:left">
+  <h1 style="text-align:center">
+    {{pageTitle}}
+  </h1>
+  <nav class="navbar navbar-expand navbar-light bg-transperant">
+    <a class="navbar-brand"style="margin-left:20px; font-weight: bold;">Menu</a>
+    <ul class="nav nav-pills">
+    <li><a class="btn btn-primary" style="margin:8px" routerLink="/welcome">Home</a></li>
+    <li><a class="nav-link" style="margin:8px" routerLink="/products">Product List</a></li>
+  </ul>
+  </nav>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
+</div>
