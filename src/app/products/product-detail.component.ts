@@ -1,8 +1,7 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { IProduct } from './product';
-import { ProductService } from "./product.service";
 
 @Component({
   templateUrl: './product-detail.component.html',
@@ -19,8 +18,8 @@ export class ProductDetailComponent implements OnInit {
   errorMessage: string = "";
 
   constructor(private route: ActivatedRoute, 
-              private router: Router, 
-              private productService: ProductService) { };
+              private router: Router 
+              ) { };
 
   onBack(): void{
     this.router.navigate(['/products']);
